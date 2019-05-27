@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.hetkataria.alarmapp.classifier.CircularProgressIndicator
+        android:id="@+id/circular_progress"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="170dp"
+        android:layout_gravity="center"
+        app:progressColor="@color/colorAccent"
+        app:progressBackgroundColor="#d8d8d8"
+        app:progressStrokeWidth="6dp"
+        app:drawDot="true"
+        app:dotColor="@color/colorAccent"
+        app:dotWidth="20dp"
+        app:textSize="24sp"
+        app:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_centerHorizontal="true"
+        android:text="Enter a Time in Seconds!"
+        android:layout_marginTop="55dp"
+        android:id="@+id/enterTime"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timebutton"
+        android:src="@drawable/ic_outline_done_24px"
+        android:tint="@android:color/white"
+        android:layout_below="@id/circular_progress"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tview"
+        android:hint="Hi!"
+        android:textSize="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColorHint="#787878"
+        android:textColor="#787878"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+
+        />
+    
+
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:15"
+        android:id="@+id/time"
+        android:textSize="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginBottom="6dp"
+
+        />
+
+    <TextView
+        android:layout_marginTop="53dp"
+        android:layout_toRightOf="@id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM"
+        android:id="@+id/am_pm"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+
+    <Switch
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/am_pm"
+        android:switchMinWidth="30dp"
+        android:id="@+id/switchaz"
+        android:layout_marginTop="45dp"
+
+
+        />
+
+    <CheckBox
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/time"
+        android:id="@+id/checkbox_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#787878"
+        android:paddingLeft="11dp"
+        android:textSize="15dp"
+
+        />
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_notifications_none_24px"
+        android:layout_below="@id/checkbox_repeat"
+        android:id="@+id/delete_icon"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="15dp"
+        android:tint="#787878"
+        />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/checkbox_repeat"
+        android:layout_toRightOf="@id/delete_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="17dp"
+        android:textSize="15dp"
+        android:text="Default (Bright Morning)"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_delete_24px"
+        android:layout_toRightOf="@+id/label"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/real_delete_icon"
+        android:tint="#787878"
+        android:layout_below="@id/switchaz"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/real_delete_icon"
+        android:layout_marginTop="75dp"
+        android:text="Delete"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@id/switchaz"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:id="@+id/deletetv"
+
+        />
+
+
+    <View
+        android:layout_marginLeft="23dp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="23dp"
+        android:layout_height="1dip"
+        android:background="#000000"
+        android:layout_below="@id/delete_icon"
+        android:id="@+id/line"/>
+
+
+</RelativeLayout>

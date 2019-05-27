@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:text="mhm"
+        android:textSize="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TUES, MAY 28"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="17dp"
+        android:id="@+id/date"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_height="1dip"
+        android:layout_below="@id/date"
+        android:background="#2e2e2e"
+        android:id="@+id/line"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timezoneRV"
+        android:layout_below="@+id/line"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_language_24px"
+        android:tint="@android:color/white"
+
+
+        />
+
+
+</RelativeLayout>
